@@ -1,0 +1,39 @@
+{
+  "entities": {
+    "UserProfile": {
+      "collection": "users",
+      "fields": {
+        "uid": { "type": "string", "description": "Unique user ID" },
+        "email": { "type": "string", "description": "User email address" },
+        "displayName": { "type": "string", "description": "User display name" },
+        "photoURL": { "type": "string", "description": "Avatar URL" },
+        "updatedAt": { "type": "string", "description": "Last update timestamp" }
+      }
+    },
+    "GenerationLog": {
+      "collection": "generation_history",
+      "fields": {
+        "id": { "type": "string", "description": "Unique generation ID" },
+        "userId": { "type": "string", "description": "Author user ID" },
+        "userEmail": { "type": "string", "description": "Author user email" },
+        "prompt": { "type": "string", "description": "Raw user intent text" },
+        "mode": { "type": "string", "description": "Auto mode code" },
+        "commands": { "type": "array", "description": "Active command tags" },
+        "responseMode": { "type": "string", "description": "Response mode" },
+        "finalOptimizedPrompt": { "type": "string", "description": "Synthesized generation prompt" },
+        "threePassPrompt": { "type": "object", "description": "Pass 1, 2, 3 details" },
+        "visualSpecification": { "type": "object", "description": "20-variable specification" },
+        "qaStatus": { "type": "string", "description": "QA pass/flag status" },
+        "qaSummary": { "type": "string", "description": "QA audit notes" },
+        "researchFigure": { "type": "object", "description": "Research figure metadata & APA caption" },
+        "technicalDrawing": { "type": "object", "description": "Technical drawing views & dimension status" },
+        "imageUrl": { "type": "string", "description": "Rendered visual image URL" },
+        "aspectRatio": { "type": "string", "description": "Visual aspect ratio" },
+        "createdAt": { "type": "string", "description": "ISO timestamp" },
+        "tags": { "type": "array", "description": "User defined categorization tags" },
+        "notes": { "type": "string", "description": "User notes and research annotations" },
+        "isFavorite": { "type": "boolean", "description": "Flag indicating if the record is starred/favorited" }
+      }
+    }
+  }
+}

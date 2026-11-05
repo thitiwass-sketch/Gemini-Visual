@@ -1,0 +1,7 @@
+{
+  "name": "Gemini Visual AI OS v5.1",
+  "description": "Integrated Visual Intelligence System for Research, Design, Technical Drawing, Presentation, and Advertising with 200+ Commands and 50-Point Visual QA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
